@@ -8,6 +8,7 @@ module maxpool_2x2 #(
     input  logic                  rst_n,
     input  logic [P_CH*A_BIT-1:0] in_data,
     input  logic                  in_valid,
+
     output logic                  in_ready,
     output logic [P_CH*A_BIT-1:0] out_data,
     output logic                  out_valid,
@@ -19,6 +20,8 @@ module maxpool_2x2 #(
     localparam int unsigned LB_DEPTH = N_OW * FOLD;
     localparam int unsigned LB_AWIDTH = $clog2(LB_DEPTH);
 
+    logic                  in_valid_d1;
+
     logic                      cntr_h;
     logic [$clog2(N_IW+1)-1:0] cntr_w;
     logic [$clog2(FOLD+1)-1:0] cntr_f;
@@ -26,24 +29,33 @@ module maxpool_2x2 #(
     logic [     LB_AWIDTH-1:0] lb_waddr;
     logic [    P_CH*A_BIT-1:0] lb_wdata;
     logic                      lb_re;
-    logic [     LB_AWIDTH-1:0] lb_raddr;
-    logic [    P_CH*A_BIT-1:0] lb_rdata;
+    logic [     LB_AWIDTH-1:0] lb_raddr_d0;
+    logic [    P_CH*A_BIT-1:0] lb_rdata_d1;
     logic [    P_CH*A_BIT-1:0] pixel_buf        [FOLD];
     logic                      pipe_en_in;
     logic                      pipe_en_out;
     logic                      pipe_en;
-    logic [    P_CH*A_BIT-1:0] temp_max_data;
+    logic [    P_CH*A_BIT-1:0] temp_max_data_d0;
+    logic [    P_CH*A_BIT-1:0] temp_max_data_d1;
 
-    assign in_ready         = (cntr_h == 1'b0) || ((cntr_h == 1'b1) && !out_ready);
-    assign lb_we            = !in_valid && (cntr_w[0] == 1'b1) && (cntr_h == 1'b1);
-    assign lb_waddr         = cntr_w + cntr_f;
-    assign lb_wdata         = (cntr_h == 1'b0) ? temp_max_data : '0;
-    assign lb_re            = out_ready && (cntr_w[0] == 1'b1) && (cntr_h == 1'b0);
-    assign lb_raddr         = (cntr_w >> 1) * FOLD + cntr_f + (cntr_w & 1'b1);
-    assign temp_max_data    = in_data;
-    assign pipe_en_in       = in_valid;
-    assign pipe_en_out      = out_ready || (cntr_h == 1'b0);
-    assign pipe_en          = pipe_en_in && pipe_en_out;
+
+    assign in_ready            = (cntr_h == 1'b0) || ((cntr_h == 1'b1) && pipe_en_out);
+    
+    assign lb_we               = in_valid && (cntr_w[0] == 1'b1) && (cntr_h == 1'b0);
+    assign lb_waddr            = (cntr_w >> 1) * FOLD + cntr_f;
+    assign lb_wdata            = (lb_we) ? temp_max_data_d0 : 0;
+    assign lb_re               = pipe_en_out && (cntr_h == 1'b1) && (cntr_w[0] == 1'b1);
+    assign lb_raddr_d0         = (cntr_w >> 1) * FOLD + cntr_f;
+    assign temp_max_data_d0    = max_vec(pixel_buf[cntr_f], in_data);
+
+    //assign pipe_en_in          = in_valid && in_ready;
+    assign pipe_en_out         = out_ready || !out_valid;
+   // assign pipe_en             = pipe_en_in && pipe_en_out;
+  
+              
+   // assign pipe_en_in          = in_valid;
+   // assign pipe_en_out         = out_ready || (cntr_h == 1'b0);
+   // assign pipe_en             = pipe_en_in && pipe_en_out;
 
     ram #(
         .DWIDTH  (P_CH * A_BIT),
@@ -55,17 +67,17 @@ module maxpool_2x2 #(
         .waddr(lb_waddr),
         .wdata(lb_wdata),
         .re   (lb_re),
-        .raddr(lb_raddr),
-        .rdata(lb_rdata)
+        .raddr(lb_raddr_d0),
+        .rdata(lb_rdata_d1)
     );
 
     always_ff @(posedge clk or negedge rst_n) begin
-        if (rst_n) begin
-            cntr_h <= 1;
+        if (!rst_n) begin
+            cntr_h <= 0;
             cntr_w <= 0;
             cntr_f <= 0;
         end else begin
-            if (pipe_en) begin
+            if (in_valid && in_ready) begin
                 if (cntr_f == FOLD - 1) begin
                     cntr_f <= 0;
                     if (cntr_w == N_IW - 1) begin
@@ -84,22 +96,39 @@ module maxpool_2x2 #(
     always_ff @(posedge clk or negedge rst_n) begin
         if (!rst_n) begin
             for (int i = 0; i < FOLD; i++) begin
-                pixel_buf[i] <= '1;
+                pixel_buf[i] <= '0;
             end
-        end else if (in_valid && cntr_w[0] == 1'b1) begin
+        end else if (in_valid && cntr_w[0] == 1'b0) begin
             pixel_buf[cntr_f] <= in_data;
         end
     end
 
-    assign out_data  = max_vec(temp_max_data, in_data);
-    assign out_valid = in_valid && cntr_w[0] == 1'b1 && cntr_h == 1'b0;
+    always_ff @( posedge clk or negedge rst_n ) begin
+        if(!rst_n) begin
+            temp_max_data_d1 <= '0;
+        end else if(pipe_en_out) begin
+            temp_max_data_d1 <= temp_max_data_d0;
+        end
+        
+    end
+    always_ff @( posedge clk or negedge rst_n ) begin 
+        if(!rst_n) begin
+            in_valid_d1 <= 1'b0;
+        
+        end else if(pipe_en_out) begin
+            in_valid_d1 <= in_valid && cntr_w[0] == 1'b1 && cntr_h == 1'b1;
+        end
+        
+    end
+    assign out_data  = max_vec(temp_max_data_d1, lb_rdata_d1);
+    assign out_valid = in_valid_d1;
 
     function automatic logic [P_CH*A_BIT-1:0] max_vec(input logic [P_CH*A_BIT-1:0] a, input logic [P_CH*A_BIT-1:0] b);
         logic [A_BIT-1:0] a_ch, b_ch;
         for (int i = 0; i < P_CH; i++) begin
             a_ch                    = a[i*A_BIT+:A_BIT];
             b_ch                    = b[i*A_BIT+:A_BIT];
-            max_vec[i*A_BIT+:A_BIT] = (a_ch < b_ch) ? a_ch : b_ch;
+            max_vec[i*A_BIT+:A_BIT] = (a_ch > b_ch) ? a_ch : b_ch;
         end
     endfunction
 endmodule

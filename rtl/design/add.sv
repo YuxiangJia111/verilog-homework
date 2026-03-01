@@ -23,10 +23,10 @@ module add #(
 
     assign handshake_in  = in1_valid && in1_ready && in2_valid && in2_ready;
     assign handshake_out = out_valid && out_ready;
-    assign in1_ready     = !pipe_valid || out_ready;
-    assign in2_ready     = !pipe_valid || out_ready;
+    assign in1_ready = (!pipe_valid || out_ready) && in1_valid && in2_valid;
+    assign in2_ready = (!pipe_valid || out_ready) && in1_valid && in2_valid;
 
-    always_comb begin
+  always_comb begin
         for (int i = 0; i < P_CH; i++) begin
             logic signed [A_BIT-1:0] x1;
             logic signed [A_BIT-1:0] x2;
@@ -45,15 +45,15 @@ module add #(
             pipe_valid <= 1'b0;
             pipe_data  <= '0;
         end else begin
-            if (in1_ready && in2_ready) begin
-                pipe_valid <= in1_valid && in2_valid;
-                if (in1_valid && in2_valid) begin
-                    pipe_data <= calc_result;
-                end
+            if(handshake_in)begin
+                pipe_valid <= 1'b1;
+                pipe_data <= calc_result;
             end
-        end
+            else if(handshake_out)begin
+                pipe_valid <= 1'b0;
+            end
+            end
     end
     assign out_valid = pipe_valid;
     assign out_data  = pipe_data;
-
 endmodule

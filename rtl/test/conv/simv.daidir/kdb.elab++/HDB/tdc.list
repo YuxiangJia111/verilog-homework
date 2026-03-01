@@ -1,0 +1,12 @@
+../../data/conv_config.svh
+./ut_conv.sv
+/home/jiayx/verilog/rtl/design/add.sv
+/home/jiayx/verilog/rtl/design/conv.sv
+/home/jiayx/verilog/rtl/design/conv_mac.sv
+/home/jiayx/verilog/rtl/design/deconv.sv
+/home/jiayx/verilog/rtl/design/deconv_mac.sv
+/home/jiayx/verilog/rtl/design/delayline.sv
+/home/jiayx/verilog/rtl/design/maxpool_2x2.sv
+/home/jiayx/verilog/rtl/design/ram.sv
+/home/jiayx/verilog/rtl/design/rom.sv
+/home/jiayx/verilog/rtl/design/wrgen_req_merge.sv

@@ -1,0 +1,47 @@
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid re-execution or '-suppress=ASLR_DETECTED_INFO' to suppress this message.
+Chronologic VCS simulator copyright 1991-2023
+Contains Synopsys proprietary information.
+Compiler version V-2023.12-SP2_Full64; Runtime version V-2023.12-SP2_Full64;  Mar  1 01:51 2026
+*Verdi* WARNING: 'Enable FSDB dumping with option -debug/-debug_pp/-debug_all and option -P along with novas.tab file' will be deprecated in VERDI2024.09.
+*Verdi* WARNING: Please use '-debug_access' along with a proper setting on VERDI_HOME environment variable in vcs compilation. For details, please refer to VCS manual for -debug_access usage.
+*Verdi* Loading libsscore_vcs202312.so
+FSDB Dumper for VCS, Release Verdi_V-2023.12-SP2, Linux x86_64/64bit, 05/26/2024
+(C) 1996 - 2024 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'ut_add.fsdb'
+*Verdi* : Begin traversing the scope (ut_add), layer (0).
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the MDAs under scope (ut_add), layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* : End of traversing the MDAs.
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : Enable +mda dumping.
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : Enable +all dumping.
+*Verdi* : End of traversing.
+Reset released at time 95000
+Loaded 100 entries into in1_queue
+Loaded 100 entries into golden_queue
+Loaded 100 entries into in2_queue
+All inputs sent at time 4955000
+
+========================================
+Starting Output Verification
+========================================
+
+========================================
+Test Summary
+========================================
+Total outputs checked: 100
+Errors found: 0
+*** TEST PASSED ***
+========================================
+
+$finish called from file "./ut_add.sv", line 235.
+$finish at simulation time              6055000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 6055000 ps
+CPU Time:      0.090 seconds;       Data structure size:   0.1Mb
+Sun Mar  1 01:51:08 2026

@@ -1,0 +1,29 @@
+rc file Version 1.0
+
+[Design]
+COMPILE_PATH=/home/jiayx/verilog/rtl/test/maxpool_2x2
+VCS_HOME=/home/yian/Synopsys/vcs/V-2023.12-SP2
+VERDI_HOME=/home/yian/Synopsys/verdi/V-2023.12-SP2
+SystemC=FALSE
+UUM=FALSE
+KDB=TRUE
+USE_NOVAS_HOME=FALSE
+COSIM=FALSE
+TOP=add conv deconv wrgen_req_merge ut_maxpool_2x2 
+OPTION=-ssv -ssy 
+ELAB_OPTION=-ssv -ssy 
+ELAB=TRUE
+SIMV_WRAPPER=FALSE
+[vcs]
+RUN_ELABCOM=unset TURBO_LOG_DIR ;\rm -rf /home/jiayx/verilog/rtl/test/maxpool_2x2/simv.daidir/elabcomLog ;/home/yian/Synopsys/vcs/V-2023.12-SP2/linux64/bin/elabcom -logdir /home/jiayx/verilog/rtl/test/maxpool_2x2/simv.daidir/elabcomLog  -simvdaidir /home/jiayx/verilog/rtl/test/maxpool_2x2/simv.daidir  -lib /home/jiayx/verilog/rtl/test/maxpool_2x2/simv.daidir/work  -saveLevel  -elab /home/jiayx/verilog/rtl/test/maxpool_2x2/simv.daidir/kdb -simflow -simdir /home/jiayx/verilog/rtl/test/maxpool_2x2/simv.daidir/kdb_libs -topfile /home/jiayx/verilog/rtl/test/maxpool_2x2/simv.daidir/.elabcomTopFile -ssv -ssy  -Lf work +disable_message+C00380+C00381 +disable_message+C00388+C00389  >& /dev/null  && echo Success >& /home/jiayx/verilog/rtl/test/maxpool_2x2/simv.daidir/.elabcomReport || echo Fail >& /home/jiayx/verilog/rtl/test/maxpool_2x2/simv.daidir/.elabcomReport; \rm -rf /home/jiayx/verilog/rtl/test/maxpool_2x2/simv.daidir/work.lib++ /home/jiayx/verilog/rtl/test/maxpool_2x2/simv.daidir/kdb_libs/ 
+
+[Value]
+WREALX=ffff534e50535f58
+WREALZ=ffff534e50535f5a
+
+[CompInfo]
+FLOW_OPTS=-kdb -ssv -ssy 
+MSG1=Warning-[KDB-ELAB-W] Verdi KDB elaboration with warning
+  Verdi KDB elaboration finished with 0 error(s) and 2 warning(s).
+  Please look at this Verdi elaboration log file for details. 
+  /home/jiayx/verilog/rtl/test/maxpool_2x2/simv.daidir/elabcomLog/compiler.log

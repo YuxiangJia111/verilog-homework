@@ -1,0 +1,135 @@
+0
+44
++incdir+/home/jiayx/verilog/rtl/data
++itf+/home/yian/Synopsys/vcs/V-2023.12-SP2/linux64/lib/vcsdp_lite.tab
++lint=TFIPC-L
++v2k
++vcsd1
++vpi
++warn=noUFTMD
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/home/yian/Synopsys/vcs/V-2023.12-SP2/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /home/yian/Synopsys/vcs/V-2023.12-SP2/linux64/lib/libvirsim.so /home/yian/Synopsys/vcs/V-2023.12-SP2/linux64/lib/liberrorinf.so /home/yian/Synopsys/vcs/V-2023.12-SP2/linux64/lib/libsnpsmalloc.so /home/yian/Synopsys/vcs/V-2023.12-SP2/linux64/lib/libvfs.so /home/yian/Synopsys/verdi/V-2023.12-SP2/share/PLI/VCS/LINUX64/pli.a
+-Mout=simv
+-Msaverestoreobj=/home/yian/Synopsys/vcs/V-2023.12-SP2/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=/home/yian/Synopsys/verdi/V-2023.12-SP2/share/PLI/VCS/LINUX64/pli.a -ldl -lm
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/home/yian/Synopsys/vcs/V-2023.12-SP2/include
+-Mxllcflags=
+-P
+-P
+-Xufe=2steps
+-debug_access+all
+-f /home/jiayx/verilog/rtl/filelist.f
+-fsdb
+-full64
+-gen_obj
+-kdb
+-lca
+-o simv
+-picarchive
+-sverilog
+-timescale=1ns/1ps
+/home/yian/Synopsys/vcs/V-2023.12-SP2/linux64/bin/vcs1
+/home/yian/Synopsys/verdi/V-2023.12-SP2/share/PLI/VCS/LINUX64/novas.tab
+simv
+/home/yian/Synopsys/verdi/V-2023.12-SP2/share/PLI/VCS/LINUX64/verdi.tab
+/home/jiayx/verilog/rtl/filelist.f
+./ut_add.sv
+62
+which_declare=declare -f
+XDG_SESSION_ID=188
+XDG_RUNTIME_DIR=/run/user/1055
+XDG_DATA_DIRS=/home/jiayx/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop
+VSCODE_PYTHON_AUTOACTIVATE_GUARD=1
+VSCODE_IPC_HOOK_CLI=/run/user/1055/vscode-ipc-7ffadbe6-b467-4e16-99a2-bc05877aa648.sock
+VSCODE_GIT_IPC_HANDLE=/run/user/1055/vscode-git-71e3ede833.sock
+VSCODE_GIT_ASKPASS_NODE=/home/jiayx/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/node
+VSCODE_GIT_ASKPASS_MAIN=/home/jiayx/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/extensions/git/dist/askpass-main.js
+VSCODE_GIT_ASKPASS_EXTRA_ARGS=
+VSCODE_DEBUGPY_ADAPTER_ENDPOINTS=/home/jiayx/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-a5667444c3aa3026.txt
+VMR_MODE_FLAG=64
+VERDI_HOME=/home/yian/Synopsys/verdi/V-2023.12-SP2
+VCS_PYTHON3=/home/yian/Synopsys/vcs/V-2023.12-SP2/linux64/bin/Python-3.6.1/bin/python3
+VCS_PATHMAP_PRELOAD_DONE=1
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_LCAMSG_PRINT_OFF=1
+VCS_HOME=/home/yian/Synopsys/vcs/V-2023.12-SP2
+VCS_EXEC_DONE=1
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+UNAME=/bin/uname
+TOOL_HOME=/home/yian/Synopsys/vcs/V-2023.12-SP2/linux64
+TERM_PROGRAM_VERSION=1.109.5
+TERM_PROGRAM=vscode
+SSL_CERT_FILE=/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem
+SSL_CERT_DIR=/etc/pki/tls/certs
+SSH_CONNECTION=192.168.1.205 41450 192.168.1.106 6690
+SSH_CLIENT=192.168.1.205 41450 6690
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SNPS_VERDI_INTERNAL_LP_XML_NEW_FLOW=1
+SNPS_VCS_PYTHON3=/home/yian/Synopsys/vcs/V-2023.12-SP2/linux64/bin/Python-3.6.1/bin/python3
+SNPS_VCS_CLANG_PATH=/home/yian/Synopsys/vcs/V-2023.12-SP2/linux64/clang
+SNPS_INTERNAL_VCS_LINUX_OS=linux
+SELINUX_USE_CURRENT_RANGE=
+SELINUX_ROLE_REQUESTED=
+SELINUX_LEVEL_REQUESTED=
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+SCL_HOME=/home/yian/Synopsys/scl/2024.06
+PYTHON_BASIC_REPL=1
+PYTHONSTARTUP=/home/jiayx/.vscode-server/data/User/workspaceStorage/243f35b7d1548f12db474d61e4d6e799/ms-python.python/pythonrc.py
+PYDEVD_DISABLE_FILE_VALIDATION=1
+PROJECT_PATH=/home/jiayx/verilog/rtl
+OVA_UUM=0
+MFLAGS=
+MAKE_TERMOUT=/dev/pts/37
+MAKE_TERMERR=/dev/pts/37
+MAKELEVEL=1
+MAKEFLAGS=
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+HISTCONTROL=ignoredups
+GIT_ASKPASS=/home/jiayx/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/extensions/git/dist/askpass.sh
+DC_HOME=/home/yian/Synopsys/syn/V-2023.12-SP3
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1055/bus
+CSO_HOME=/home/yian/Synopsys/vcs/V-2023.12-SP2/cso
+COLORTERM=truecolor
+BUNDLED_DEBUGPY_PATH=/home/jiayx/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy
+BASH_FUNC_which%%=() {  ( alias;_ eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@_}
+0
+0
+15
+1772357973 ./ut_add.sv
+1772357973 /home/jiayx/verilog/rtl/design/wrgen_req_merge.sv
+1772358071 /home/jiayx/verilog/rtl/design/maxpool_2x2.sv
+1772357973 /home/jiayx/verilog/rtl/design/deconv.sv
+1772358046 /home/jiayx/verilog/rtl/design/conv.sv
+1772357973 /home/jiayx/verilog/rtl/design/rom.sv
+1772357973 /home/jiayx/verilog/rtl/design/ram.sv
+1772357973 /home/jiayx/verilog/rtl/design/deconv_mac.sv
+1772358038 /home/jiayx/verilog/rtl/design/conv_mac.sv
+1772357973 /home/jiayx/verilog/rtl/design/delayline.sv
+1772358005 /home/jiayx/verilog/rtl/design/add.sv
+1772357973 /home/jiayx/verilog/rtl/filelist.f
+1716718493 /home/yian/Synopsys/verdi/V-2023.12-SP2/share/PLI/VCS/LINUX64/verdi.tab
+1716718493 /home/yian/Synopsys/verdi/V-2023.12-SP2/share/PLI/VCS/LINUX64/novas.tab
+1717384209 /home/yian/Synopsys/vcs/V-2023.12-SP2/linux64/lib/vcsdp_lite.tab
+5
+1728130055 /home/yian/Synopsys/vcs/V-2023.12-SP2/linux64/lib/libvirsim.so
+1728130051 /home/yian/Synopsys/vcs/V-2023.12-SP2/linux64/lib/liberrorinf.so
+1728130061 /home/yian/Synopsys/vcs/V-2023.12-SP2/linux64/lib/libsnpsmalloc.so
+1728130051 /home/yian/Synopsys/vcs/V-2023.12-SP2/linux64/lib/libvfs.so
+1716716611 /home/yian/Synopsys/verdi/V-2023.12-SP2/share/PLI/VCS/LINUX64/pli.a
+1772358668 simv.daidir
+-1 partitionlib

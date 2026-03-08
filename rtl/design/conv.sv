@@ -29,37 +29,39 @@ module conv #(
     localparam int unsigned LB_AWIDTH = $clog2(LB_DEPTH);
 
     logic signed [               B_BIT-1:0] acc                   [  P_OCH];
+
+
     logic        [      $clog2(N_HW+1)-1:0] cntr_hw;
     logic        [    $clog2(FOLD_O+1)-1:0] cntr_fo;
     logic        [    $clog2(FOLD_I+1)-1:0] cntr_fi;
     logic        [        $clog2(KK+1)-1:0] cntr_kk;
+
     logic                                   pipe_en_in;
     logic                                   pipe_en_out;
+    logic                                   pipe_en;
+
     logic                                   is_fst_fo_d0;
     logic                                   is_fst_fo_d1;
-    logic                                   is_fst_fo_d2;
-    logic                                   mac_array_data_vld_d1;
-    logic                                   mac_array_data_vld_d2;
-    logic        [         P_ICH*A_BIT-1:0] in_data_d1;
-    logic        [         P_ICH*A_BIT-1:0] in_data_d2;
-    logic        [         P_ICH*A_BIT-1:0] in_buf_d2;
     logic                                   is_fst_kk_fi_d0;
     logic                                   is_fst_kk_fi_d1;
-    logic                                   is_fst_kk_fi_d2;
-    logic                                   is_lst_kk_fi_d0;
+    logic                                   is_lst_kk_fi_d0; 
     logic                                   is_lst_kk_fi_d1;
-    logic                                   is_lst_kk_fi_d2;
-    logic                                   is_lst_kk_fi_dly      [P_ICH + 1];
+
+    logic                                   mac_array_data_vld_d1;
+
+    logic                 [P_ICH*A_BIT-1:0] in_data_d1;
+
     logic                                   line_buffer_we;
-    logic        [           LB_AWIDTH-1:0] line_buffer_waddr;
-    logic        [         P_ICH*A_BIT-1:0] line_buffer_wdata;
+    logic                   [LB_AWIDTH-1:0] line_buffer_waddr;
+    logic                 [P_ICH*A_BIT-1:0] line_buffer_wdata;
+
     logic                                   line_buffer_re;
-    logic        [           LB_AWIDTH-1:0] line_buffer_raddr_d0;
-    logic        [           LB_AWIDTH-1:0] line_buffer_raddr_d1;
-    logic        [         P_ICH*A_BIT-1:0] line_buffer_rdata_d2;
-    logic        [$clog2(WEIGHT_DEPTH)-1:0] weight_addr_d0;
-    logic        [   P_OCH*P_ICH*W_BIT-1:0] weight_data_d1;
-    logic        [   P_OCH*P_ICH*W_BIT-1:0] weight_data_d2;
+    logic                   [LB_AWIDTH-1:0] line_buffer_raddr_d0;
+    logic                 [P_ICH*A_BIT-1:0] line_buffer_rdata_d1;
+
+    logic         [$clog2(WEIGHT_DEPTH)-1:0] weight_addr_d0;
+    logic            [P_OCH*P_ICH*W_BIT-1:0] weight_data_d1;
+
 
     rom #(
         .DWIDTH(P_OCH * P_ICH * W_BIT),
@@ -74,6 +76,7 @@ module conv #(
         .q0   (weight_data_d1)
     );
 
+
     ram #(
         .DWIDTH  (P_ICH * A_BIT),
         .AWIDTH  (LB_AWIDTH),
@@ -84,10 +87,12 @@ module conv #(
         .waddr(line_buffer_waddr),
         .wdata(line_buffer_wdata),
         .re   (line_buffer_re),
-        .raddr(line_buffer_raddr_d1),
-        .rdata(line_buffer_rdata_d2)
+        .raddr(line_buffer_raddr_d0), 
+        .rdata(line_buffer_rdata_d1)   
     );
-    assign pipe_en_in           = is_fst_fo_d0 ? in_valid : 1'b1;
+
+
+   assign pipe_en_in           = is_fst_fo_d0 ? in_valid : 1'b1;
     assign pipe_en_out          = out_ready;
     assign pipe_en              = pipe_en_in && pipe_en_out;
 
@@ -137,67 +142,52 @@ module conv #(
             end
         end
     end
-
     always_ff @(posedge clk or negedge rst_n) begin
         if (!rst_n) begin
-            line_buffer_raddr_d1  <= 'd0;
+            in_data_d1 <= '0;
 
-            in_data_d1            <= 'd0;
-            in_data_d2            <= 'd0;
+            is_fst_fo_d1 <= 0;
 
-            is_fst_fo_d1          <= 'd0;
-            is_fst_fo_d2          <= 'd0;
+            is_fst_kk_fi_d1 <= 0;
 
-            is_fst_kk_fi_d1       <= 'd0;
-            is_fst_kk_fi_d2       <= 'd0;
+            is_lst_kk_fi_d1 <= 0;
 
-            is_lst_kk_fi_d1       <= 'd0;
-            is_lst_kk_fi_d2       <= 'd0;
+            mac_array_data_vld_d1 <= 0;
 
-            mac_array_data_vld_d1 <= 'd0;
-            mac_array_data_vld_d2 <= 'd0;
-
-            weight_data_d2        <= 'd0;
         end else if (pipe_en_out) begin
-            line_buffer_raddr_d1  <= line_buffer_raddr_d0;
 
-            in_data_d1            <= in_data;
-            in_data_d2            <= in_data_d1;
+            in_data_d1 <= in_data;
 
-            is_fst_fo_d1          <= is_fst_fo_d0;
-            is_fst_fo_d2          <= is_fst_fo_d1;
+            is_fst_fo_d1 <= is_fst_fo_d0;
 
-            is_fst_kk_fi_d1       <= is_fst_kk_fi_d0;
-            is_fst_kk_fi_d2       <= is_fst_kk_fi_d1;
+            is_fst_kk_fi_d1 <= is_fst_kk_fi_d0;
 
-            is_lst_kk_fi_d1       <= is_lst_kk_fi_d0;
-            is_lst_kk_fi_d2       <= is_lst_kk_fi_d1;
+            is_lst_kk_fi_d1 <= is_lst_kk_fi_d0;
 
             mac_array_data_vld_d1 <= (is_fst_fo_d0 ? in_valid : 1'b1);
-            mac_array_data_vld_d2 <= mac_array_data_vld_d1;
 
-            weight_data_d2        <= weight_data_d1;
         end
     end
-    
-    assign in_buf_d2 = is_fst_fo_d2 ? in_data_d2 : line_buffer_rdata_d2;
-    logic        [A_BIT-1:0] x_vec[P_ICH];
-    logic signed [W_BIT-1:0] w_vec[P_OCH] [P_ICH];
+
+    logic                 [P_ICH*A_BIT-1:0] in_buf_d1;
+    assign in_buf_d1 = is_fst_fo_d1 ? in_data_d1 : line_buffer_rdata_d1;
+
+    logic  [A_BIT-1:0] x_vec[P_ICH];
+    logic signed  [W_BIT-1:0] w_vec[P_OCH][P_ICH];
+
     always_comb begin
         for (int i = 0; i < P_ICH; i++) begin
-            x_vec[i] = in_buf_d2[i*A_BIT+:A_BIT];
+            x_vec[i] = in_buf_d1[i*A_BIT+:A_BIT];
         end
     end
 
     always_comb begin
         for (int o = 0; o < P_OCH; o++) begin
             for (int i = 0; i < P_ICH; i++) begin
-                w_vec[o][i] = weight_data_d2[(P_ICH*o+i)*W_BIT+:W_BIT];
+                w_vec[o][i] = weight_data_d1[(P_ICH*o+i)*W_BIT+:W_BIT];
             end
         end
-    end
-
-    generate
+    end    generate
         for (genvar o = 0; o < P_OCH; o++) begin : gen_mac_array
             conv_mac_array #(
                 .P_ICH(P_ICH),
@@ -208,8 +198,8 @@ module conv #(
                 .clk    (clk),
                 .rst_n  (rst_n),
                 .en     (pipe_en_out),
-                .dat_vld(mac_array_data_vld_d2),
-                .clr    (is_fst_kk_fi_d2),
+                .dat_vld(mac_array_data_vld_d1),
+                .clr    (is_fst_kk_fi_d1),
                 .x_vec  (x_vec),
                 .w_vec  (w_vec[o]),
                 .acc    (acc[o])
@@ -217,13 +207,15 @@ module conv #(
         end
     endgenerate
 
+    logic is_lst_kk_fi_dly[P_ICH+1];
+
     always_ff @(posedge clk or negedge rst_n) begin
         if (!rst_n) begin
             for (int i = 0; i < P_ICH + 1; i++) begin
                 is_lst_kk_fi_dly[i] <= 1'b0;
             end
         end else if (pipe_en_out) begin
-            is_lst_kk_fi_dly[0] <= is_lst_kk_fi_d2;
+            is_lst_kk_fi_dly[0] <= is_lst_kk_fi_d1;
             for (int i = 1; i < P_ICH + 1; i++) begin
                 is_lst_kk_fi_dly[i] <= is_lst_kk_fi_dly[i-1];
             end
@@ -233,8 +225,8 @@ module conv #(
     assign out_valid = is_lst_kk_fi_dly[P_ICH];
 
     always_comb begin
-        for (int o = 0; o < P_OCH; o++) begin
+        for (int o = 0; o < P_OCH; o++)
             out_data[o*B_BIT+:B_BIT] = acc[o];
-        end
     end
+
 endmodule

@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1772361646.367519540, "rt":0.22, "ut":0.14, "st":0.05}}
+{"vcselab":{"timestamp_begin":1772361646.611038075, "rt":0.10, "ut":0.08, "st":0.02}}
+{"link":{"timestamp_begin":1772361646.736077074, "rt":0.09, "ut":0.07, "st":0.02}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1772361646.152922513}
+{"VCS_COMP_START_TIME": 1772361646.152922513}
+{"VCS_COMP_END_TIME": 1772361646.873744973}
+{"VCS_USER_OPTIONS": "-full64 -sverilog -timescale=1ns/1ps +v2k -debug_access+all -lca -kdb +lint=TFIPC-L +warn=noUFTMD +incdir+/home/jiayx/verilog/rtl/data -P /home/yian/Synopsys/verdi/V-2023.12-SP2/share/PLI/VCS/LINUX64/novas.tab /home/yian/Synopsys/verdi/V-2023.12-SP2/share/PLI/VCS/LINUX64/pli.a -f /home/jiayx/verilog/rtl/filelist.f ./ut_conv.sv -o simv"}
+{"vcs1": {"peak_mem": 544848}}
+{"vcselab": {"peak_mem": 245972}}

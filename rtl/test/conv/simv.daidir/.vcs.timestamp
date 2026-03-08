@@ -44,16 +44,16 @@ simv
 /home/yian/Synopsys/verdi/V-2023.12-SP2/share/PLI/VCS/LINUX64/verdi.tab
 /home/jiayx/verilog/rtl/filelist.f
 ./ut_conv.sv
-62
+60
 which_declare=declare -f
-XDG_SESSION_ID=188
+XDG_SESSION_ID=603
 XDG_RUNTIME_DIR=/run/user/1055
 XDG_DATA_DIRS=/home/jiayx/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop
 VSCODE_PYTHON_AUTOACTIVATE_GUARD=1
-VSCODE_IPC_HOOK_CLI=/run/user/1055/vscode-ipc-5fd4ddad-74d9-47dc-b133-297e0a671b1d.sock
+VSCODE_IPC_HOOK_CLI=/run/user/1055/vscode-ipc-9af6e641-1907-4f21-9eae-f2d3c434415c.sock
 VSCODE_GIT_IPC_HANDLE=/run/user/1055/vscode-git-71e3ede833.sock
-VSCODE_GIT_ASKPASS_NODE=/home/jiayx/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/node
-VSCODE_GIT_ASKPASS_MAIN=/home/jiayx/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/extensions/git/dist/askpass-main.js
+VSCODE_GIT_ASKPASS_NODE=/home/jiayx/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/node
+VSCODE_GIT_ASKPASS_MAIN=/home/jiayx/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/extensions/git/dist/askpass-main.js
 VSCODE_GIT_ASKPASS_EXTRA_ARGS=
 VSCODE_DEBUGPY_ADAPTER_ENDPOINTS=/home/jiayx/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-a5667444c3aa3026.txt
 VMR_MODE_FLAG=64
@@ -70,12 +70,10 @@ VCS_ARG_ADDED_FOR_TMP=1
 VCS_ARCH=linux64
 UNAME=/bin/uname
 TOOL_HOME=/home/yian/Synopsys/vcs/V-2023.12-SP2/linux64
-TERM_PROGRAM_VERSION=1.109.5
+TERM_PROGRAM_VERSION=1.110.1
 TERM_PROGRAM=vscode
-SSL_CERT_FILE=/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem
-SSL_CERT_DIR=/etc/pki/tls/certs
-SSH_CONNECTION=192.168.1.205 41450 192.168.1.106 6690
-SSH_CLIENT=192.168.1.205 41450 6690
+SSH_CONNECTION=192.168.1.205 54442 192.168.1.106 6690
+SSH_CLIENT=192.168.1.205 54442 6690
 SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
 SNPS_VERDI_INTERNAL_LP_XML_NEW_FLOW=1
 SNPS_VCS_PYTHON3=/home/yian/Synopsys/vcs/V-2023.12-SP2/linux64/bin/Python-3.6.1/bin/python3
@@ -93,14 +91,14 @@ PYDEVD_DISABLE_FILE_VALIDATION=1
 PROJECT_PATH=/home/jiayx/verilog/rtl
 OVA_UUM=0
 MFLAGS=
-MAKE_TERMOUT=/dev/pts/24
-MAKE_TERMERR=/dev/pts/24
+MAKE_TERMOUT=/dev/pts/4
+MAKE_TERMERR=/dev/pts/4
 MAKELEVEL=1
 MAKEFLAGS=
 LESSOPEN=||/usr/bin/lesspipe.sh %s
 LC_ALL=C
 HISTCONTROL=ignoredups
-GIT_ASKPASS=/home/jiayx/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/extensions/git/dist/askpass.sh
+GIT_ASKPASS=/home/jiayx/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/extensions/git/dist/askpass.sh
 DC_HOME=/home/yian/Synopsys/syn/V-2023.12-SP3
 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1055/bus
 CSO_HOME=/home/yian/Synopsys/vcs/V-2023.12-SP2/cso
@@ -110,16 +108,16 @@ BASH_FUNC_which%%=() {  ( alias;_ eval ${which_declare} ) | /usr/bin/which --tty
 0
 0
 16
-1772358655 ../../data/conv_config.svh
+1772459401 ../../data/conv_config.svh
 1772357973 ./ut_conv.sv
-1772357973 /home/jiayx/verilog/rtl/design/wrgen_req_merge.sv
+1772768468 /home/jiayx/verilog/rtl/design/wrgen_req_merge.sv
 1772358071 /home/jiayx/verilog/rtl/design/maxpool_2x2.sv
-1772357973 /home/jiayx/verilog/rtl/design/deconv.sv
-1772358046 /home/jiayx/verilog/rtl/design/conv.sv
+1772857073 /home/jiayx/verilog/rtl/design/deconv.sv
+1772896171 /home/jiayx/verilog/rtl/design/conv.sv
 1772357973 /home/jiayx/verilog/rtl/design/rom.sv
 1772357973 /home/jiayx/verilog/rtl/design/ram.sv
-1772357973 /home/jiayx/verilog/rtl/design/deconv_mac.sv
-1772358038 /home/jiayx/verilog/rtl/design/conv_mac.sv
+1772856982 /home/jiayx/verilog/rtl/design/deconv_mac.sv
+1772895918 /home/jiayx/verilog/rtl/design/conv_mac.sv
 1772357973 /home/jiayx/verilog/rtl/design/delayline.sv
 1772358005 /home/jiayx/verilog/rtl/design/add.sv
 1772357973 /home/jiayx/verilog/rtl/filelist.f
@@ -132,5 +130,5 @@ BASH_FUNC_which%%=() {  ( alias;_ eval ${which_declare} ) | /usr/bin/which --tty
 1728130061 /home/yian/Synopsys/vcs/V-2023.12-SP2/linux64/lib/libsnpsmalloc.so
 1728130051 /home/yian/Synopsys/vcs/V-2023.12-SP2/linux64/lib/libvfs.so
 1716716611 /home/yian/Synopsys/verdi/V-2023.12-SP2/share/PLI/VCS/LINUX64/pli.a
-1772358695 simv.daidir
+1772896175 simv.daidir
 -1 partitionlib

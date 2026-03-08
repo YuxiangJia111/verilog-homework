@@ -2,7 +2,7 @@ Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detec
 Please use '-no_save' simv switch to avoid re-execution or '-suppress=ASLR_DETECTED_INFO' to suppress this message.
 Chronologic VCS simulator copyright 1991-2023
 Contains Synopsys proprietary information.
-Compiler version V-2023.12-SP2_Full64; Runtime version V-2023.12-SP2_Full64;  Mar  1 01:51 2026
+Compiler version V-2023.12-SP2_Full64; Runtime version V-2023.12-SP2_Full64;  Mar  7 03:24 2026
 *Verdi* WARNING: 'Enable FSDB dumping with option -debug/-debug_pp/-debug_all and option -P along with novas.tab file' will be deprecated in VERDI2024.09.
 *Verdi* WARNING: Please use '-debug_access' along with a proper setting on VERDI_HOME environment variable in vcs compilation. For details, please refer to VCS manual for -debug_access usage.
 *Verdi* Loading libsscore_vcs202312.so
@@ -44,4 +44,4 @@ $finish at simulation time              6055000
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 6055000 ps
 CPU Time:      0.090 seconds;       Data structure size:   0.1Mb
-Sun Mar  1 01:51:08 2026
+Sat Mar  7 03:24:24 2026

@@ -145,7 +145,7 @@ Limit information:
 cputime		unlimited
 filesize		unlimited
 datasize		unlimited
-stacksize		8192 kbytes
+stacksize		8193 kbytes
 coredumpsize		0 kbytes
 memoryuse		unlimited
 vmemoryuse		unlimited
@@ -159,20 +159,20 @@ Runtime environment variables:
 LD_LIBRARY_PATH=/home/yian/Synopsys/verdi/V-2023.12-SP2/share/PLI/VCS/linux64
 LS_COLORS=rs=0:di=38;5;33:ln=38;5;51:mh=00:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=01;05;37;41:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;40:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.zst=38;5;9:*.tzst=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.wim=38;5;9:*.swm=38;5;9:*.dwm=38;5;9:*.esd=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.mjpg=38;5;13:*.mjpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.m4a=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.oga=38;5;45:*.opus=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
 PYTHON_BASIC_REPL=1
-SSH_CONNECTION=192.168.1.205 41450 192.168.1.106 6690
+SSH_CONNECTION=192.168.1.205 54442 192.168.1.106 6690
 _=./simv
 LANG=en_US.UTF-8
 HISTCONTROL=ignoredups
 HOSTNAME=localhost.localdomain
 PROJECT_PATH=/home/jiayx/verilog/rtl
 COLORTERM=truecolor
-MAKE_TERMOUT=/dev/pts/38
+MAKE_TERMOUT=/dev/pts/0
 SNPSLMD_LICENSE_FILE=27000@localhost.localdomain
 VSCODE_GIT_ASKPASS_EXTRA_ARGS=
 VSCODE_DEBUGPY_ADAPTER_ENDPOINTS=/home/jiayx/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-a5667444c3aa3026.txt
 MFLAGS=
 which_declare=declare -f
-XDG_SESSION_ID=188
+XDG_SESSION_ID=603
 VSCODE_PYTHON_AUTOACTIVATE_GUARD=1
 USER=jiayx
 PYDEVD_DISABLE_FILE_VALIDATION=1
@@ -182,18 +182,17 @@ SELINUX_ROLE_REQUESTED=
 PWD=/home/jiayx/verilog/rtl/test/maxpool_2x2
 SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
 HOME=/home/jiayx
-BROWSER=/home/jiayx/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/bin/helpers/browser.sh
-VSCODE_GIT_ASKPASS_NODE=/home/jiayx/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/node
+BROWSER=/home/jiayx/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/bin/helpers/browser.sh
+VSCODE_GIT_ASKPASS_NODE=/home/jiayx/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/node
 TERM_PROGRAM=vscode
-SSH_CLIENT=192.168.1.205 41450 6690
-TERM_PROGRAM_VERSION=1.109.5
+SSH_CLIENT=192.168.1.205 54442 6690
+TERM_PROGRAM_VERSION=1.110.1
 SELINUX_LEVEL_REQUESTED=
 XDG_DATA_DIRS=/home/jiayx/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop
 SCL_HOME=/home/yian/Synopsys/scl/2024.06
-SSL_CERT_FILE=/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem
-VSCODE_IPC_HOOK_CLI=/run/user/1055/vscode-ipc-d8cfd9f1-d0ad-4dc4-93b1-c2e760746a43.sock
+VSCODE_IPC_HOOK_CLI=/run/user/1055/vscode-ipc-5f6dedc4-cb2f-4cbb-85ce-d08136a58831.sock
 MAIL=/var/spool/mail/jiayx
-VSCODE_GIT_ASKPASS_MAIN=/home/jiayx/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/extensions/git/dist/askpass-main.js
+VSCODE_GIT_ASKPASS_MAIN=/home/jiayx/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/extensions/git/dist/askpass-main.js
 TERM=xterm-256color
 SHELL=/bin/bash
 LM_LICENSE_FILE=27000@localhost.localdomain
@@ -202,14 +201,13 @@ MAKELEVEL=1
 VERDI_HOME=/home/yian/Synopsys/verdi/V-2023.12-SP2
 PYTHONSTARTUP=/home/jiayx/.vscode-server/data/User/workspaceStorage/243f35b7d1548f12db474d61e4d6e799/ms-python.python/pythonrc.py
 SHLVL=6
-MAKE_TERMERR=/dev/pts/38
+MAKE_TERMERR=/dev/pts/0
 VSCODE_GIT_IPC_HANDLE=/run/user/1055/vscode-git-71e3ede833.sock
-SSL_CERT_DIR=/etc/pki/tls/certs
 LOGNAME=jiayx
 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1055/bus
-GIT_ASKPASS=/home/jiayx/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/extensions/git/dist/askpass.sh
+GIT_ASKPASS=/home/jiayx/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/extensions/git/dist/askpass.sh
 XDG_RUNTIME_DIR=/run/user/1055
-PATH=/home/jiayx/local/bin:/home/jiayx/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/jiayx/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/jiayx/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/bin/remote-cli:/home/jiayx/local/bin:/home/jiayx/local/bin:/home/jiayx/.local/bin:/home/jiayx/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/var/lib/snapd/snap/bin:/home/yian/Synopsys/syn/V-2023.12-SP3/bin:/home/yian/Synopsys/rtla/V-2023.12/bin:/home/yian/Synopsys/spyglass/V-2023.12-SP1/SPYGLASS_HOME/bin:/home/yian/Synopsys/verdi/V-2023.12-SP2/bin:/home/yian/Synopsys/vcs/V-2023.12-SP2/bin:/home/yian/Synopsys/syn/V-2023.12-SP3/bin:/home/yian/Synopsys/rtla/V-2023.12/bin:/home/yian/Synopsys/spyglass/V-2023.12-SP1/SPYGLASS_HOME/bin:/home/yian/Synopsys/verdi/V-2023.12-SP2/bin:/home/yian/Synopsys/vcs/V-2023.12-SP2/bin:/home/jiayx/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts:/home/yian/Synopsys/syn/V-2023.12-SP3/bin:/home/yian/Synopsys/rtla/V-2023.12/bin:/home/yian/Synopsys/spyglass/V-2023.12-SP1/SPYGLASS_HOME/bin:/home/yian/Synopsys/verdi/V-2023.12-SP2/bin:/home/yian/Synopsys/vcs/V-2023.12-SP2/bin
+PATH=/home/jiayx/local/bin:/home/jiayx/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/jiayx/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/jiayx/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/bin/remote-cli:/home/jiayx/local/bin:/home/jiayx/local/bin:/home/jiayx/.local/bin:/home/jiayx/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/var/lib/snapd/snap/bin:/home/yian/Synopsys/syn/V-2023.12-SP3/bin:/home/yian/Synopsys/rtla/V-2023.12/bin:/home/yian/Synopsys/spyglass/V-2023.12-SP1/SPYGLASS_HOME/bin:/home/yian/Synopsys/verdi/V-2023.12-SP2/bin:/home/yian/Synopsys/vcs/V-2023.12-SP2/bin:/home/yian/Synopsys/syn/V-2023.12-SP3/bin:/home/yian/Synopsys/rtla/V-2023.12/bin:/home/yian/Synopsys/spyglass/V-2023.12-SP1/SPYGLASS_HOME/bin:/home/yian/Synopsys/verdi/V-2023.12-SP2/bin:/home/yian/Synopsys/vcs/V-2023.12-SP2/bin:/home/jiayx/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts:/home/yian/Synopsys/syn/V-2023.12-SP3/bin:/home/yian/Synopsys/rtla/V-2023.12/bin:/home/yian/Synopsys/spyglass/V-2023.12-SP1/SPYGLASS_HOME/bin:/home/yian/Synopsys/verdi/V-2023.12-SP2/bin:/home/yian/Synopsys/vcs/V-2023.12-SP2/bin
 CSO_HOME=/home/yian/Synopsys/vcs/V-2023.12-SP2/cso
 VCS_HOME=/home/yian/Synopsys/vcs/V-2023.12-SP2
 HISTSIZE=1000
@@ -230,39 +228,40 @@ argv[0]=./simv
 argv[1]=+vcs+flush+all
 argv[2]=+fsdbfile+ut_maxpool_2x2.fsdb
 argv[3]=+PROJECT_PATH=/home/jiayx/verilog/rtl
-230 profile - 100
-          CPU/Mem usage: 0.010 sys,  0.070 user,  303.25M mem
-231 Elapsed time:    0:00:00    Sun Mar  1 01:51:22 2026
-232 User CPU time used: 0 seconds
-233 System CPU time used: 0 seconds
-234 pliAppInit
-235 [SC]Init: MemoryConsumed=0.00MB ElapsedTime=0hour 0min. 0sec.
-236 FSDB_GATE is set.
-237 FSDB_RTL is set.
-238 FSDB_PACKED_MODE is enabled.
-239 FSDB_GATE_PACKED is enabled.
-240 FSDB_ALIAS_ARRAY_ELEM is set to 4294967295.
-241 Enable Parallel Dumping.
-242 pliAppMiscSet: New Sim Round
-243 pliEntryInit
-244 LIBSSCORE=found /home/yian/Synopsys/verdi/V-2023.12-SP2/share/PLI/lib/LINUXAMD64/libsscore_vcs202312.so through $NOVAS_HOME setting.
-245 FSDB Dumper for VCS, Release Verdi_V-2023.12-SP2, Linux x86_64/64bit, 05/26/2024
-246 (C) 1996 - 2024 by Synopsys, Inc.
-247 sps_call_fsdbDumpfile_main at 0 : ./ut_maxpool_2x2.sv(220)
-248 argv[0]: (ut_maxpool_2x2.fsdb)
-249 *Verdi* : Create FSDB file 'ut_maxpool_2x2.fsdb'
-250 [spi_vcs_vd_ppi_create_root]: no upf option
-251 compile option from '/home/jiayx/verilog/rtl/test/maxpool_2x2/simv.daidir/vcs_rebuild'.
-252   "vcs '-full64' '-sverilog' '-timescale=1ns/1ps' '+v2k' '-debug_access+all' '-lca' '-kdb' '+lint=TFIPC-L' '+warn=noUFTMD' '+incdir+/home/jiayx/verilog/rtl/data' '-P' '/home/yian/Synopsys/verdi/V-2023.12-SP2/share/PLI/VCS/LINUX64/novas.tab' '/home/yian/Synopsys/verdi/V-2023.12-SP2/share/PLI/VCS/LINUX64/pli.a' '-f' '/home/jiayx/verilog/rtl/filelist.f' './ut_maxpool_2x2.sv' '-o' 'simv' 2>&1"
-253 DVDI_is_vir_unload_enabled is enable
-254 FSDB_VCS_ENABLE_NATIVE_VC is enable
-255 sps_call_fsdbDumpvars_vd_main at 0 : ./ut_maxpool_2x2.sv(221)
-256 argv[0]: (0)
-257 argv[1]: (handle) ut_maxpool_2x2
-258 *Verdi* : Begin traversing the scope (ut_maxpool_2x2), layer (0).
-259 *Verdi* : End of traversing.
-260 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.010 sys,  0.070 user,  400.70M mem
+228 profile - 100
+          CPU/Mem usage: 0.010 sys,  0.070 user,  305.36M mem
+229 Elapsed time:    0:00:00    Sat Mar  7 07:03:04 2026
+230 User CPU time used: 0 seconds
+231 System CPU time used: 0 seconds
+232 pliAppInit
+233 [SC]Init: MemoryConsumed=0.00MB ElapsedTime=0hour 0min. 0sec.
+234 FSDB_GATE is set.
+235 FSDB_RTL is set.
+236 FSDB_PACKED_MODE is enabled.
+237 FSDB_GATE_PACKED is enabled.
+238 FSDB_ALIAS_ARRAY_ELEM is set to 4294967295.
+239 Enable Parallel Dumping.
+240 pliAppMiscSet: New Sim Round
+241 pliEntryInit
+242 LIBSSCORE=found /home/yian/Synopsys/verdi/V-2023.12-SP2/share/PLI/lib/LINUXAMD64/libsscore_vcs202312.so through $NOVAS_HOME setting.
+243 FSDB Dumper for VCS, Release Verdi_V-2023.12-SP2, Linux x86_64/64bit, 05/26/2024
+244 (C) 1996 - 2024 by Synopsys, Inc.
+245 sps_call_fsdbDumpfile_main at 0 : ./ut_maxpool_2x2.sv(220)
+246 argv[0]: (ut_maxpool_2x2.fsdb)
+247 *Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+248 *Verdi* : Create FSDB file 'ut_maxpool_2x2.fsdb'
+249 [spi_vcs_vd_ppi_create_root]: no upf option
+250 compile option from '/home/jiayx/verilog/rtl/test/maxpool_2x2/simv.daidir/vcs_rebuild'.
+251   "vcs '-full64' '-sverilog' '-timescale=1ns/1ps' '+v2k' '-debug_access+all' '-lca' '-kdb' '+lint=TFIPC-L' '+warn=noUFTMD' '+incdir+/home/jiayx/verilog/rtl/data' '-P' '/home/yian/Synopsys/verdi/V-2023.12-SP2/share/PLI/VCS/LINUX64/novas.tab' '/home/yian/Synopsys/verdi/V-2023.12-SP2/share/PLI/VCS/LINUX64/pli.a' '-f' '/home/jiayx/verilog/rtl/filelist.f' './ut_maxpool_2x2.sv' '-o' 'simv' 2>&1"
+252 DVDI_is_vir_unload_enabled is enable
+253 FSDB_VCS_ENABLE_NATIVE_VC is enable
+254 sps_call_fsdbDumpvars_vd_main at 0 : ./ut_maxpool_2x2.sv(221)
+255 argv[0]: (0)
+256 argv[1]: (handle) ut_maxpool_2x2
+257 *Verdi* : Begin traversing the scope (ut_maxpool_2x2), layer (0).
+258 *Verdi* : End of traversing.
+259 pliAppHDL_DumpVarComplete traverse var: profile - 
+          CPU/Mem usage: 0.020 sys,  0.070 user,  402.81M mem
                    incr: 0.000 sys,  0.000 user,  7.22M mem
                    accu: 0.000 sys,  0.000 user,  7.22M mem
               accu incr: 0.000 sys,  0.000 user,  7.22M mem
@@ -271,11 +270,11 @@ argv[3]=+PROJECT_PATH=/home/jiayx/verilog/rtl
                  incr: 55 var,  55 idcode,  32 callback
                  accu: 55 var,  55 idcode,  32 callback
             accu incr: 55 var,  55 idcode,  32 callback
-261 Elapsed time:    0:00:00    Sun Mar  1 01:51:22 2026
-262 User CPU time used: 0 seconds
-263 System CPU time used: 0 seconds
-264 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.010 sys,  0.070 user,  401.75M mem
+260 Elapsed time:    0:00:00    Sat Mar  7 07:03:04 2026
+261 User CPU time used: 0 seconds
+262 System CPU time used: 0 seconds
+263 pliAppHDL_DumpVarComplete: profile - 
+          CPU/Mem usage: 0.020 sys,  0.070 user,  403.87M mem
                    incr: 0.000 sys,  0.000 user,  1.05M mem
                    accu: 0.000 sys,  0.000 user,  8.27M mem
               accu incr: 0.000 sys,  0.000 user,  1.05M mem
@@ -284,17 +283,17 @@ argv[3]=+PROJECT_PATH=/home/jiayx/verilog/rtl
                  incr: 0 var,  0 idcode,  0 callback
                  accu: 55 var,  55 idcode,  32 callback
             accu incr: 0 var,  0 idcode,  0 callback
-265 Elapsed time:    0:00:00    Sun Mar  1 01:51:22 2026
-266 User CPU time used: 0 seconds
-267 System CPU time used: 0 seconds
-268 sps_call_fsdbDumpMDA_vd_main at 0 : ./ut_maxpool_2x2.sv(222)
-269 argv[0]: (0)
-270 argv[1]: (handle) ut_maxpool_2x2
-271 *Verdi* : Begin traversing the MDAs under scope (ut_maxpool_2x2), layer (0).
-272 *Verdi* : Enable +mda and +packedmda dumping.
-273 *Verdi* : End of traversing the MDAs.
-274 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.010 sys,  0.070 user,  401.75M mem
+264 Elapsed time:    0:00:00    Sat Mar  7 07:03:04 2026
+265 User CPU time used: 0 seconds
+266 System CPU time used: 0 seconds
+267 sps_call_fsdbDumpMDA_vd_main at 0 : ./ut_maxpool_2x2.sv(222)
+268 argv[0]: (0)
+269 argv[1]: (handle) ut_maxpool_2x2
+270 *Verdi* : Begin traversing the MDAs under scope (ut_maxpool_2x2), layer (0).
+271 *Verdi* : Enable +mda and +packedmda dumping.
+272 *Verdi* : End of traversing the MDAs.
+273 pliAppHDL_DumpVarComplete traverse var: profile - 
+          CPU/Mem usage: 0.020 sys,  0.070 user,  403.87M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
                    accu: 0.000 sys,  0.000 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
@@ -303,11 +302,11 @@ argv[3]=+PROJECT_PATH=/home/jiayx/verilog/rtl
                  incr: 328 var,  328 idcode,  2 callback
                  accu: 328 var,  328 idcode,  2 callback
             accu incr: 328 var,  328 idcode,  2 callback
-275 Elapsed time:    0:00:00    Sun Mar  1 01:51:22 2026
-276 User CPU time used: 0 seconds
-277 System CPU time used: 0 seconds
-278 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.010 sys,  0.070 user,  401.75M mem
+274 Elapsed time:    0:00:00    Sat Mar  7 07:03:04 2026
+275 User CPU time used: 0 seconds
+276 System CPU time used: 0 seconds
+277 pliAppHDL_DumpVarComplete: profile - 
+          CPU/Mem usage: 0.020 sys,  0.070 user,  403.87M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
                    accu: 0.000 sys,  0.000 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
@@ -316,95 +315,95 @@ argv[3]=+PROJECT_PATH=/home/jiayx/verilog/rtl
                  incr: 0 var,  0 idcode,  0 callback
                  accu: 328 var,  328 idcode,  2 callback
             accu incr: 0 var,  0 idcode,  0 callback
-279 Elapsed time:    0:00:00    Sun Mar  1 01:51:22 2026
-280 User CPU time used: 0 seconds
-281 System CPU time used: 0 seconds
-282 sps_call_fsdbDumpvars_vd_main at 0 : ./ut_maxpool_2x2.sv(223)
-283 argv[0]: (+mda)
-284 *Verdi* : Begin traversing the scopes, layer (0).
-285 *Verdi* : Enable +mda dumping.
-286 *Verdi* : End of traversing.
-287 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.020 sys,  0.070 user,  402.07M mem
-                   incr: 0.000 sys,  0.000 user,  0.32M mem
-                   accu: 0.000 sys,  0.000 user,  0.32M mem
-              accu incr: 0.000 sys,  0.000 user,  0.32M mem
+278 Elapsed time:    0:00:00    Sat Mar  7 07:03:04 2026
+279 User CPU time used: 0 seconds
+280 System CPU time used: 0 seconds
+281 sps_call_fsdbDumpvars_vd_main at 0 : ./ut_maxpool_2x2.sv(223)
+282 argv[0]: (+mda)
+283 *Verdi* : Begin traversing the scopes, layer (0).
+284 *Verdi* : Enable +mda dumping.
+285 *Verdi* : End of traversing.
+286 pliAppHDL_DumpVarComplete traverse var: profile - 
+          CPU/Mem usage: 0.020 sys,  0.070 user,  404.19M mem
+                   incr: 0.000 sys,  0.000 user,  0.33M mem
+                   accu: 0.000 sys,  0.000 user,  0.33M mem
+              accu incr: 0.000 sys,  0.000 user,  0.33M mem
 
-          Count usage: 1987 var,  1607 idcode,  374 callback
-                 incr: 1604 var,  1224 idcode,  340 callback
-                 accu: 1604 var,  1224 idcode,  340 callback
-            accu incr: 1604 var,  1224 idcode,  340 callback
-288 Elapsed time:    0:00:00    Sun Mar  1 01:51:22 2026
-289 User CPU time used: 0 seconds
-290 System CPU time used: 0 seconds
-291 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.020 sys,  0.070 user,  402.07M mem
+          Count usage: 1975 var,  1595 idcode,  366 callback
+                 incr: 1592 var,  1212 idcode,  332 callback
+                 accu: 1592 var,  1212 idcode,  332 callback
+            accu incr: 1592 var,  1212 idcode,  332 callback
+287 Elapsed time:    0:00:00    Sat Mar  7 07:03:04 2026
+288 User CPU time used: 0 seconds
+289 System CPU time used: 0 seconds
+290 pliAppHDL_DumpVarComplete: profile - 
+          CPU/Mem usage: 0.020 sys,  0.070 user,  404.19M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
-                   accu: 0.000 sys,  0.000 user,  0.32M mem
+                   accu: 0.000 sys,  0.000 user,  0.33M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
 
-          Count usage: 1987 var,  1607 idcode,  374 callback
+          Count usage: 1975 var,  1595 idcode,  366 callback
                  incr: 0 var,  0 idcode,  0 callback
-                 accu: 1604 var,  1224 idcode,  340 callback
+                 accu: 1592 var,  1212 idcode,  332 callback
             accu incr: 0 var,  0 idcode,  0 callback
-292 Elapsed time:    0:00:00    Sun Mar  1 01:51:22 2026
-293 User CPU time used: 0 seconds
-294 System CPU time used: 0 seconds
-295 sps_call_fsdbDumpvars_vd_main at 0 : ./ut_maxpool_2x2.sv(224)
-296 argv[0]: (+all)
-297 *Verdi* : Begin traversing the scopes, layer (0).
-298 *Verdi* : Enable +all dumping.
-299 *Verdi* : End of traversing.
-300 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.020 sys,  0.070 user,  402.07M mem
+291 Elapsed time:    0:00:00    Sat Mar  7 07:03:04 2026
+292 User CPU time used: 0 seconds
+293 System CPU time used: 0 seconds
+294 sps_call_fsdbDumpvars_vd_main at 0 : ./ut_maxpool_2x2.sv(224)
+295 argv[0]: (+all)
+296 *Verdi* : Begin traversing the scopes, layer (0).
+297 *Verdi* : Enable +all dumping.
+298 *Verdi* : End of traversing.
+299 pliAppHDL_DumpVarComplete traverse var: profile - 
+          CPU/Mem usage: 0.020 sys,  0.070 user,  404.19M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
                    accu: 0.000 sys,  0.000 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
 
-          Count usage: 3592 var,  1608 idcode,  375 callback
-                 incr: 1605 var,  1 idcode,  1 callback
-                 accu: 1605 var,  1 idcode,  1 callback
-            accu incr: 1605 var,  1 idcode,  1 callback
-301 Elapsed time:    0:00:00    Sun Mar  1 01:51:22 2026
-302 User CPU time used: 0 seconds
-303 System CPU time used: 0 seconds
-304 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.020 sys,  0.070 user,  402.07M mem
+          Count usage: 3568 var,  1596 idcode,  367 callback
+                 incr: 1593 var,  1 idcode,  1 callback
+                 accu: 1593 var,  1 idcode,  1 callback
+            accu incr: 1593 var,  1 idcode,  1 callback
+300 Elapsed time:    0:00:00    Sat Mar  7 07:03:04 2026
+301 User CPU time used: 0 seconds
+302 System CPU time used: 0 seconds
+303 pliAppHDL_DumpVarComplete: profile - 
+          CPU/Mem usage: 0.020 sys,  0.070 user,  404.19M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
                    accu: 0.000 sys,  0.000 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
 
-          Count usage: 3592 var,  1608 idcode,  375 callback
+          Count usage: 3568 var,  1596 idcode,  367 callback
                  incr: 0 var,  0 idcode,  0 callback
-                 accu: 1605 var,  1 idcode,  1 callback
+                 accu: 1593 var,  1 idcode,  1 callback
             accu incr: 0 var,  0 idcode,  0 callback
-305 Elapsed time:    0:00:00    Sun Mar  1 01:51:22 2026
-306 User CPU time used: 0 seconds
-307 System CPU time used: 0 seconds
-308 End of simulation at 1164815000
-309 Memory usage: 483.885 M
-310 Maximum resident set size: 142 MB
-311 Hard page faults: 0
-312 Soft page faults: 16017
-313 Elapsed time:    0:00:01    Sun Mar  1 01:51:23 2026
-314 User CPU time used: 0 seconds
-315 System CPU time used: 0 seconds
-316 Begin FSDB profile info:
-317 FSDB Writer : bc1(363744) bcn(504280) mtf/stf(0/0)
-FSDB Writer elapsed time : flush(0.051773) io wait(0.000000) theadpool wait(0.000000)
+304 Elapsed time:    0:00:00    Sat Mar  7 07:03:04 2026
+305 User CPU time used: 0 seconds
+306 System CPU time used: 0 seconds
+307 End of simulation at 1164815000
+308 Memory usage: 486.011 M
+309 Maximum resident set size: 143 MB
+310 Hard page faults: 0
+311 Soft page faults: 16041
+312 Elapsed time:    0:00:01    Sat Mar  7 07:03:05 2026
+313 User CPU time used: 0 seconds
+314 System CPU time used: 0 seconds
+315 Begin FSDB profile info:
+316 FSDB Writer : bc1(363752) bcn(504228) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(0.042003) io wait(0.000000) theadpool wait(0.000000)
 FSDB Writer cpu time : MT Compression : 0
-318 End FSDB profile info
-319 FSDB closed. Name: ut_maxpool_2x2.fsdb Size: 389665
-320 Parallel profile     - ProducerThread:1 ConsumerThread:1 Buffer:64MB
-321                      - BlockUsed:9 Acquire:0 BufferUsed:15603183
-322                      - Flush:6 Expand:0 ProducerWait:0 ConsumerWait:7
-323                      - MainProducerTime:0.281479823 TotalConsumerTime:0.025924413
-324                      - ElapsedTime:0.405206000
-325 Producer   0 profile - BlockUsed:9 Acquire:0 BufferUsed:15603183
-326 Consumer   0 profile - Affinity:-1 CPUTime:0.025924413 LifeTime:0.313916758 (0.08%)
-327                      - BlockUsed:9 Acquire:0 BufferUsed:15603183
-328 SimExit
-329 Elapsed time:    0:00:01    Sun Mar  1 01:51:23 2026
-330 User CPU time used: 0 seconds
-331 System CPU time used: 0 seconds
-332 Sim process exit
+317 End FSDB profile info
+318 FSDB closed. Name: ut_maxpool_2x2.fsdb Size: 390006
+319 Parallel profile     - ProducerThread:1 ConsumerThread:1 Buffer:64MB
+320                      - BlockUsed:9 Acquire:0 BufferUsed:15603183
+321                      - Flush:6 Expand:0 ProducerWait:0 ConsumerWait:7
+322                      - MainProducerTime:0.260915768 TotalConsumerTime:0.022164681
+323                      - ElapsedTime:0.484324000
+324 Producer   0 profile - BlockUsed:9 Acquire:0 BufferUsed:15603183
+325 Consumer   0 profile - Affinity:-1 CPUTime:0.022164681 LifeTime:0.406871586 (0.05%)
+326                      - BlockUsed:9 Acquire:0 BufferUsed:15603183
+327 SimExit
+328 Elapsed time:    0:00:01    Sat Mar  7 07:03:05 2026
+329 User CPU time used: 0 seconds
+330 System CPU time used: 0 seconds
+331 Sim process exit

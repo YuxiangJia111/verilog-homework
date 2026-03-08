@@ -1,3 +1,3 @@
 Command Line: /home/yian/Synopsys/vcs/V-2023.12-SP2/linux64/bin/elabcom -logdir /home/jiayx/verilog/rtl/test/add/simv.daidir/elabcomLog -simvdaidir /home/jiayx/verilog/rtl/test/add/simv.daidir -lib /home/jiayx/verilog/rtl/test/add/simv.daidir/work -saveLevel -elab /home/jiayx/verilog/rtl/test/add/simv.daidir/kdb -simflow -simdir /home/jiayx/verilog/rtl/test/add/simv.daidir/kdb_libs -topfile /home/jiayx/verilog/rtl/test/add/simv.daidir/.elabcomTopFile -ssv -ssy -Lf work +disable_message+C00380+C00381 +disable_message+C00388+C00389
 uname(Linux localhost.localdomain 4.18.0-553.22.1.el8_10.x86_64 #1 SMP Wed Sep 11 18:02:00 EDT 2024 x86_64)
-au time 0.066779 0.007000 0.055948 delta 88244224 88244224 total 339202048 339202048
+au time 0.014406 0.005847 0.006093 delta 88342528 88342528 total 339300352 339300352

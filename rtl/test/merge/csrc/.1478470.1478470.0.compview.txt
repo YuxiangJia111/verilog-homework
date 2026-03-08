@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1772764672.078776418, "rt":0.10, "ut":0.07, "st":0.05}}
+{"vcselab":{"timestamp_begin":1772764672.208550072, "rt":0.10, "ut":0.07, "st":0.02}}
+{"link":{"timestamp_begin":1772764672.324375678, "rt":0.09, "ut":0.07, "st":0.01}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1772764671.897073462}
+{"VCS_COMP_START_TIME": 1772764671.897073462}
+{"VCS_COMP_END_TIME": 1772764672.457133945}
+{"VCS_USER_OPTIONS": "-full64 -sverilog -timescale=1ns/1ps +v2k -debug_access+all -lca -kdb +lint=TFIPC-L +warn=noUFTMD +incdir+/home/jiayx/verilog/rtl/data -P /home/yian/Synopsys/verdi/V-2023.12-SP2/share/PLI/VCS/LINUX64/novas.tab /home/yian/Synopsys/verdi/V-2023.12-SP2/share/PLI/VCS/LINUX64/pli.a ../../design/wrgen_req_merge.sv ./tb_wrgen_req_merge.sv -o simv"}
+{"vcs1": {"peak_mem": 543884}}
+{"vcselab": {"peak_mem": 237532}}

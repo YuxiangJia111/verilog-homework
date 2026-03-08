@@ -1,7 +1,7 @@
 # Makefile for wrgen_req_merge testbench with VCS
 
 # Project paths
-PROJECT_ROOT := $(shell cd .. && pwd)
+PROJECT_ROOT := $(shell cd ../.. && pwd)
 SET_ENV_SCRIPT := $(PROJECT_ROOT)/set_env.sh
 
 # Source set_env.sh to get PROJECT_PATH
@@ -10,8 +10,8 @@ export PROJECT_PATH := $(shell source $(SET_ENV_SCRIPT) > /dev/null 2>&1 && echo
 
 # Source files
 TB_DIR = .
-DESIGN_DIR = ../design
-DATA_DIR = ../data
+DESIGN_DIR = ../../design
+DATA_DIR = ../../data
 
 TB_SRCS = $(TB_DIR)/tb_wrgen_req_merge.sv
 DESIGN_SRCS = $(DESIGN_DIR)/wrgen_req_merge.sv

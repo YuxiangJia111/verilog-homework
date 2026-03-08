@@ -2,7 +2,7 @@
 Command arguments:  -lib  /home/jiayx/verilog/rtl/test/maxpool_2x2/simv.daidir/work  -saveLevel  -elab  /home/jiayx/verilog/rtl/test/maxpool_2x2/simv.daidir/kdb  -simflow  -simdir  /home/jiayx/verilog/rtl/test/maxpool_2x2/simv.daidir/kdb_libs  -topfile  /home/jiayx/verilog/rtl/test/maxpool_2x2/simv.daidir/.elabcomTopFile  -ssv  -ssy  -Lf  work  +disable_message+C00380+C00381  +disable_message+C00388+C00389  -SNPS_ELABCOM  -saveElab 
 
 *Warning* Failed to find the specified instance parameter RAM_STYLE in the master ram
-"/home/jiayx/verilog/rtl/design/deconv.sv", 68: 
+"/home/jiayx/verilog/rtl/design/deconv.sv", 70: 
 
 *Warning* Failed to find the specified instance parameter N_IH in the master maxpool_2x2
 "./ut_maxpool_2x2.sv", 40: 

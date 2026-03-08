@@ -1,0 +1,5 @@
+{"vcs1":{"timestamp_begin":1772764456.559881147, "rt":0.04, "ut":0.02, "st":0.01}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1772764456.382760255}
+{"VCS_COMP_START_TIME": 1772764456.382760255}
+{"VCS_COMP_END_TIME": 1772764456.612953491}
+{"VCS_USER_OPTIONS": "-full64 -sverilog -timescale=1ns/1ps +v2k -debug_access+all -lca -kdb +lint=TFIPC-L +warn=noUFTMD +incdir+/home/jiayx/verilog/rtl/data -P /home/yian/Synopsys/verdi/V-2023.12-SP2/share/PLI/VCS/LINUX64/novas.tab /home/yian/Synopsys/verdi/V-2023.12-SP2/share/PLI/VCS/LINUX64/pli.a ../../design/wrgen_req_merge.sv ./tb_wrgen_req_merge.sv -o simv"}

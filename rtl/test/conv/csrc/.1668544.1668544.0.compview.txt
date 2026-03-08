@@ -1,0 +1,7 @@
+Command exited with non-zero status 255
+{"vcs1":{"timestamp_begin":1772878878.402044411, "rt":0.05, "ut":0.03, "st":0.01}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1772878878.224454968}
+{"VCS_COMP_START_TIME": 1772878878.224454968}
+{"VCS_COMP_END_TIME": 1772878878.472508934}
+{"VCS_USER_OPTIONS": "-full64 -sverilog -timescale=1ns/1ps +v2k -debug_access+all -lca -kdb +lint=TFIPC-L +warn=noUFTMD +incdir+/home/jiayx/verilog/rtl/data -P /home/yian/Synopsys/verdi/V-2023.12-SP2/share/PLI/VCS/LINUX64/novas.tab /home/yian/Synopsys/verdi/V-2023.12-SP2/share/PLI/VCS/LINUX64/pli.a -f /home/jiayx/verilog/rtl/filelist.f ./ut_conv.sv -o simv"}
+{"vcs1": {"peak_mem": 544560}}

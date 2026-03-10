@@ -6,33 +6,44 @@ module mac_array #(
 ) (
     input  logic                    clk,
     input  logic                    rst_n,
-    input  logic                    en,
-    input  logic                    dat_vld,
-    input  logic                    clr,
+    input  logic                    en,     
+    input  logic                    dat_vld, 
+    input  logic                    clr,    
     input  logic        [A_BIT-1:0] x_vec  [P_ICH],
     input  logic signed [W_BIT-1:0] w_vec  [P_ICH],
     output logic signed [B_BIT-1:0] acc
 );
 
-    logic signed [B_BIT-1:0] spatial_sum;
+    logic signed [A_BIT+W_BIT:0] products [P_ICH];
+    logic signed [B_BIT-1:0]     tree_sum;
 
     always_comb begin
-        spatial_sum = 0; 
         for (int i = 0; i < P_ICH; i++) begin
-            spatial_sum = spatial_sum + ($signed({1'b0, x_vec[i]}) * $signed(w_vec[i]));
+            products[i] = $signed({1'b0, x_vec[i]}) * w_vec[i];
         end
+    end
+
+    always_comb begin
+        logic signed [B_BIT-1:0] temp_sum;
+        temp_sum = 0;
+        for (int i = 0; i < P_ICH; i++) begin
+            temp_sum = temp_sum + products[i];
+        end
+        tree_sum = temp_sum;
     end
 
     always_ff @(posedge clk or negedge rst_n) begin
         if (!rst_n) begin
-            acc <= 0; 
+            acc <= '0;
         end else if (en) begin
-            if (dat_vld) begin
-                if (clr) acc <= spatial_sum;
-                else     acc <= acc + spatial_sum;
-            end else begin
-                if (clr) acc <= 0;
-            end
+            case ({
+                clr, dat_vld
+            })
+                2'b00: acc <= acc;
+                2'b01: acc <= acc + tree_sum;
+                2'b10: acc <= '0;
+                2'b11: acc <= tree_sum;
+            endcase
         end
     end
 
